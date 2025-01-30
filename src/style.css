@@ -176,7 +176,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background-image: url('/pink_card.png');
   background-size: 100%;
 }
-.about-cards__pink .card--active {
+.about-cards__pink.card--active {
   box-shadow: 0px 0px 10px 4px #A054FF;
 }
 
@@ -185,7 +185,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background-image: url('/green_card.png');
 }
 
-.about-cards__green .card--active {
+.about-cards__green.card--active {
   box-shadow: 0px 0px 10px 4px #45D4BC;
 }
 
@@ -194,7 +194,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background-image: url('/blue_card.png');
 }
 
-.about-cards__blue .card--active {
+.about-cards__blue.card--active {
   box-shadow: 0px 0px 10px 4px #4088E6;
 }
 .cases, .gallery, .contact, footer {
