@@ -2,12 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image" href="/Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
+  <header class="header">
+    <a class="header__logo-link logo-link" href="">
+      <p class="logo-link__text">GameFesti</p>
+    </a>
+    <nav class="header__nav nav">
+        <ul class="nav__links-list links-list">
+            <li class="links-list__item"><a href="#about">О нас</a></li>
+            <li class="links-list__item"><a href="#cases">Кейсы</a></li>
+            <li class="links-list__item"><a href="#gallery">Галерея</a></li>
+        </ul>
+    </nav>
+    <a href="tel:+4733378901" class="nav__phone">+79099999999</a>
+  </header>
+  
+  <section class="promo">
+    <div class="promo__container">  
+      <h1 class="promo__header">Агенство по созданию серверов и проведению мероприятий в популярных играх</h1>
+      <p class="promo__description">Наша комапания разработает событие и пространство внутри популярных игр для вашей компании с целью продвижения вашего бренда или продукта</p>
+      <a href="#contact" class="promo__link button">Оставить заявку</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="about__header">О НАС</h2>
+    <p class="about__subheader">Наша компания объединяет в себе</p>
+    <div class="about__cards about-cards">
+      <div class="about-cards__pink card">Индустрия игр</div>
+      <div class="about-cards__green card">Организация мероприятий</div>
+      <div class="about-cards__blue card">Маркетинг</div>
+    </div>
+  </section>
+
+  <section id="cases" class="cases">
+    <h2>НАШИ КЕЙСЫ</h2>
+    <div class="case-items">
+      <div class="case">Minecraft – Разработка мира для Московской конференции</div>
+      <div class="case">Minecraft – Виртуальная доставка товаров</div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+      <h2>ГАЛЕРЕЯ</h2>
+      <div class="gallery-slider">Изображения...</div>
+  </section>
+
+  <section class="contact" id="contact">
+      <h2>ОСТАВИТЬ ЗАЯВКУ</h2>
+      <form>
+          <input type="text" placeholder="Имя">
+          <input type="email" placeholder="Email">
+          <input type="tel" placeholder="Номер телефона">
+          <textarea placeholder="Комментарий"></textarea>
+          <button type="submit">Отправить</button>
+      </form>
+  </section>
+
+  <footer>
+      <h2>НАШИ СОЦИАЛЬНЫЕ СЕТИ</h2>
+      <div class="social-icons">
+          <img src="telegram.png" alt="Telegram">
+      </div>
+  </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

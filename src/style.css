@@ -1,96 +1,214 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@font-face {
+  font-family: "Montserrat";
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('opentype');
+  font-style: normal; 
+  font-weight: normal; 
+} 
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@font-face {
+  font-family: "benzin"; 
+  src: url('/fonts/benzin-bold.otf') format('opentype');
+  font-style: normal; 
+  font-weight: bold; 
+} 
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* General Styles */
 body {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  background-color: #1F1F1F;
+  color: #fff;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+a {
+  text-decoration: none;
+  color: inherit;
 }
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background: linear-gradient(#6981FF, #2AABEE);
+  border-radius: 20px;
+  display: block;
+}
+
+.header {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 240px;
+  background: #323232;
+  height: 80px;
+}
+
+.header__logo-link {
+  display: flex;
+  justify-content: space-between;
+  width: 73px;
+  height: 66px;
+}
+
+.logo-link__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__phone {
+  font-size: 18px;
+}
+
+.promo {
+  /* padding: 100px 20px; */
+  height: 1074px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/Promo_img.png');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.promo__container {
+  margin-top: 300px;
+  margin-left: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 890px;
+  height: 465px; 
+}
+
+.promo__header {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: benzin;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.promo__description {
+  max-width: 740px;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 108px;
+}
+
+.promo__link {
+  width: 479px;
+  height: 87px;
+  font-size: 36px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  /* margin: 0 240px; */
+  height: 1042px;
+  min-width: 1442px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about__header {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: benzin;
+  margin-bottom: 40px;
+}
+
+.about__subheader {
+  font-size: 24px;
+  margin-bottom: 44px;
+}
+
+.about__cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  min-width: 1442px;
 }
 
 .card {
-  padding: 2em;
+  width: 405px;
+  height: 307px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  font-weight: bold;
+  font-family: benzin;
+  font-size: 32px;
+  color: #000;
 }
 
-.read-the-docs {
-  color: #888;
+.about-cards__pink { 
+  background: #EB95FC;
+  background-image: url('../public/pink_card.png');
+  background-size: 100%;
+  box-shadow: 0px 0px 10px 4px #A054FF;
+}
+.about-cards__green {
+  background: #5BF1D8;
+  box-shadow: 0px 0px 10px 4px #45D4BC;
+}
+.about-cards__blue {
+  background: #53A9FF;
+  box-shadow: 0px 0px 10px 4px #4088E6;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.cases, .gallery, .contact, footer {
+  padding: 50px 20px;
+}
+
+form input, form textarea {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form button {
+  background: #6200ea;
+  color: white;
+  padding: 10px 20px;
+  border: none;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.social-icons img {
+  width: 40px;
+  margin: 10px;
 }
+
