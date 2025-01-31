@@ -10,6 +10,9 @@ const roboticsCaseSlider = new Slider(roboticsCase, false, true)
 const festivalCase = document.querySelector('.case__festival-slider .slider') as HTMLElement;
 const festivalCaseSlider = new Slider(festivalCase, false, true)
 
+const gallerySliderElement = document.querySelector('.gallery__slider .slider') as HTMLElement;
+const gallerySlider = new Slider(gallerySliderElement, true, false)
+
 const cardsSection = document.querySelector('.about__cards') as HTMLElement;
 let activeCard = cardsSection?.querySelector('.card--active') as HTMLElement;
 
@@ -36,6 +39,7 @@ const onCardClick = (evt: Event) => {
 aboutSlider.startTimer()
 roboticsCaseSlider.startTimer()
 festivalCaseSlider.startTimer()
+gallerySlider.startTimer()
 
 cardsSection.addEventListener('click', onCardClick)
 // здесь должна вызываться ф-ия 
