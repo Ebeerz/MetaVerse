@@ -99,7 +99,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .promo__container {
   margin-top: 300px;
-  margin-left: 240px;
+  margin-left: 10vw;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -133,8 +133,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .about {
-  height: 1042px;
-  width: 100%;
+  height: 120vh;
+  width: 80vw;
+  margin: 0 10vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -157,12 +158,14 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   margin: 50px 0;
-  min-width: 1442px;
+  min-width: 80vw;
 }
 
 .card {
-  width: 405px;
-  height: 307px;
+  width: 25vw;
+  max-width: 405px;
+  height: 40vh;
+  max-height: 307px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,12 +175,13 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 32px;
   color: #000;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .about-cards__pink { 
   background: #EB95FC;
   background-image: url('/pink_card.png');
-  background-size: 100%;
 }
 .about-cards__pink.card--active {
   box-shadow: 0px 0px 10px 4px #A054FF;
@@ -200,9 +204,180 @@ p, h1, h2, h3, h4, h5, h6 {
 .about-cards__blue.card--active {
   box-shadow: 0px 0px 10px 4px #4088E6;
 }
-.cases, .gallery, .contact, footer {
-  padding: 50px 20px;
+
+.about__information {
+  text-align: left;
+  color: #000;
+  border-radius: 40px;
+  width: 80vw;
+  padding: 10vh 5vw;
+  background-color: #EB95FC;
+  display: none;
+  justify-content: space-between;
 }
+
+.about__information--active {
+  display: flex;
+}
+
+.about__information--active#industry {
+  background: #EB95FC;
+}
+
+.about__information--active#events {
+  background: #5BF1D8;
+}
+
+.about__information--active#marketing {
+  background: #53A9FF;
+}
+.about__text-container {
+  width: 30vw;
+  max-width: 514px;
+}
+
+.about__text-header {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: benzin;
+  margin-bottom: 12px;
+}
+
+.about__text {
+  font-size: 20px;
+}
+
+
+.about__slider .slider {
+  border-radius: 40px;
+  width: 586px;
+  height: 380px;
+}
+
+.slider__container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  left: 0px;
+  width: 586px;
+  height: 380px;
+  position: relative;
+  transition: left .3s ease-in-out;
+}
+
+.slide {
+  float: left;
+}
+
+.slide__img {
+  width: 586px;
+  height: 380px;
+}
+
+.slider-nav__list{
+  width: 100%;
+  height: 19px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 0; 
+  padding: 0;
+}
+
+.slider-nav__item{
+  background-color: #fff;
+  margin-right: 10px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-nav__item--current {
+  background-color: #5BF1D8;
+}
+
+.slider-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 95px;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 32px;
+  height: 18px;
+}
+.arrow--next {
+  transform: rotate(180deg);
+}
+
+.about__slider .arrow {
+  filter: invert(0%) sepia(29%) saturate(4%) hue-rotate(297deg) brightness(0%) contrast(100%);
+}
+
+.cases {
+  width: 80vw;
+  margin: 0 10vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cases__header {
+  margin-bottom: 44px;
+  font-size: 40px;
+  font-family: benzin;
+  font-weight: bold;
+}
+
+.case {
+  width: 586px;
+}
+
+.case__slider .slider {
+  border-radius: 40px;
+  width: 586px;
+  height: 380px;
+  margin-bottom: 55px;
+}
+
+.cases-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.case__header {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.case__text {
+  text-align: left;
+}
+
+.gallery {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery__slider .slider {
+  border-radius: 40px;
+  width: 586px;
+  height: 380px;
+  margin-bottom: 55px;
+}
+/* .cases, .gallery, .contact, footer {
+  padding: 50px 20px;
+} */
 
 form input, form textarea {
   display: block;
