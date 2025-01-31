@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image" href="https://ebeerz.github.io/MetaVerse/Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-    <script type="module" crossorigin src="https://ebeerz.github.io/MetaVerse/assets/index-Dqgauv70.js"></script>
-    <link rel="stylesheet" crossorigin href="https://ebeerz.github.io/MetaVerse/assets/index-Bf0ju7gX.css">
+    <title>MetaVerse</title>
+    <script type="module" crossorigin src="https://ebeerz.github.io/MetaVerse/assets/index-B5V7haV9.js"></script>
+    <link rel="stylesheet" crossorigin href="https://ebeerz.github.io/MetaVerse/assets/index-CrfJ_DIu.css">
   </head>
   <body>
   <header class="header">
     <a class="header__logo-link logo-link" href="">
-      <p class="logo-link__text">GameFesti</p>
+      <p class="logo-link__text">METAVERSE</p>
     </a>
     <nav class="header__nav nav">
         <ul class="nav__links-list links-list">
@@ -34,24 +34,271 @@
   <section id="about" class="about">
     <h2 class="about__header">О НАС</h2>
     <p class="about__subheader">Наша компания объединяет в себе</p>
+
     <div class="about__cards about-cards">
-      <div class="about-cards__pink card">Индустрия игр</div>
-      <div class="about-cards__green card">Организация мероприятий</div>
-      <div class="about-cards__blue card">Маркетинг</div>
+      <div class="about-cards__pink card card--active" id="industry">Индустрия игр</div>
+      <div class="about-cards__green card" id="events">Организация мероприятий</div>
+      <div class="about-cards__blue card" id="marketing">Маркетинг</div>
+    </div>
+
+    <div class="about__information about__information--active" id="industry">
+      <div class="about__text-container">
+        <h2 class="about__text-header">Индустрия игр</h2>
+        <p class="about__text">В своём стремлении улучшить пользовательский опыт мы упускаем, что реплицированные с зарубежных источников,
+          современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом 
+          и должны быть указаны как претенденты на роль.
+          В своём стремлении улучшить пользовательский опыт мы упускаем, что реплицированные с зарубежных источников,
+          современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом
+          и должны быть указаны как претенденты на роль.</p>
+      </div>
+      <div class="about__slider">
+        <div class="slider">
+          <div class="slider__container">
+              <div class="slider__wrapper">
+                  <div class="slider__slide slide">
+                      <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_1.png" alt="sus cat">
+                  </div>
+                  <div class="slider__slide slide">
+                      <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_2.png" alt="sus cat">
+                  </div>
+                  <div class="slider__slide slide">
+                      <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_1.png" alt="sus cat">
+                  </div>
+                  <div class="slider__slide slide">
+                      <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_2.png" alt="sus cat">
+                  </div>
+              </div>
+          </div>
+          <div class="slider__nav slider-nav">
+              <ul class="slider-nav__list">
+                  <li class="slider-nav__item slider-nav__item--current"></li>
+                  <li class="slider-nav__item"></li>
+                  <li class="slider-nav__item"></li>
+                  <li class="slider-nav__item"></li>
+              </ul>
+          </div>
+          <div class="slider__arrows slider-arrows">
+            <img src="https://ebeerz.github.io/MetaVerse/arrow.svg" alt="arrow" class="slider-arrows__arrow arrow arrow--previous">
+            <img src="https://ebeerz.github.io/MetaVerse/arrow.svg" alt="arrow" class="slider-arrows__arrow arrow arrow--next">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__information" id="events">
+      <div class="about__text-container">
+        <h2 class="about__text-header">Организация мероприятий</h2>
+        <p class="about__text">В своём стремлении улучшить пользовательский опыт мы упускаем, что реплицированные с зарубежных источников,
+          современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом 
+          и должны быть указаны как претенденты на роль.
+          В своём стремлении улучшить пользовательский опыт мы упускаем, что реплицированные с зарубежных источников,
+          современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом
+          и должны быть указаны как претенденты на роль.</p>
+      </div>
+      <div class="about__slider">
+        <div class="slider">
+          <div class="slider__container">
+              <div class="slider__wrapper">
+                  <div class="slider__slide slide">
+                      <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_1.png" alt="sus cat">
+                  </div>
+                  <div class="slider__slide slide">
+                      <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_2.png" alt="sus cat">
+                  </div>
+                  <div class="slider__slide slide">
+                      <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_1.png" alt="sus cat">
+                  </div>
+                  <div class="slider__slide slide">
+                      <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_2.png" alt="sus cat">
+                  </div>
+              </div>
+          </div>
+          <div class="slider__nav slider-nav">
+              <ul class="slider-nav__list">
+                  <li class="slider-nav__item slider-nav__item--current"></li>
+                  <li class="slider-nav__item"></li>
+                  <li class="slider-nav__item"></li>
+                  <li class="slider-nav__item"></li>
+              </ul>
+          </div>
+          <div class="slider__arrows slider-arrows">
+            <img src="https://ebeerz.github.io/MetaVerse/arrow.svg" alt="arrow" class="slider-arrows__arrow arrow arrow--previous">
+            <img src="https://ebeerz.github.io/MetaVerse/arrow.svg" alt="arrow" class="slider-arrows__arrow arrow arrow--next">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__information" id="marketing">
+      <div class="about__text-container">
+        <h2 class="about__text-header">Маркетинг</h2>
+        <p class="about__text">В своём стремлении улучшить пользовательский опыт мы упускаем, что реплицированные с зарубежных источников,
+          современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом 
+          и должны быть указаны как претенденты на роль.
+          В своём стремлении улучшить пользовательский опыт мы упускаем, что реплицированные с зарубежных источников,
+          современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом
+          и должны быть указаны как претенденты на роль.</p>
+      </div>
+      <div class="about__slider">
+        <div class="slider">
+          <div class="slider__container">
+              <div class="slider__wrapper">
+                  <div class="slider__slide slide">
+                      <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_1.png" alt="sus cat">
+                  </div>
+                  <div class="slider__slide slide">
+                      <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_2.png" alt="sus cat">
+                  </div>
+                  <div class="slider__slide slide">
+                      <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_1.png" alt="sus cat">
+                  </div>
+                  <div class="slider__slide slide">
+                      <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_2.png" alt="sus cat">
+                  </div>
+              </div>
+          </div>
+          <div class="slider__nav slider-nav">
+              <ul class="slider-nav__list">
+                  <li class="slider-nav__item slider-nav__item--current"></li>
+                  <li class="slider-nav__item"></li>
+                  <li class="slider-nav__item"></li>
+                  <li class="slider-nav__item"></li>
+              </ul>
+          </div>
+          <div class="slider__arrows slider-arrows">
+            <img src="https://ebeerz.github.io/MetaVerse/arrow.svg" alt="arrow" class="slider-arrows__arrow arrow arrow--previous">
+            <img src="https://ebeerz.github.io/MetaVerse/arrow.svg" alt="arrow" class="slider-arrows__arrow arrow arrow--next">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="cases" class="cases">
-    <h2>НАШИ КЕЙСЫ</h2>
-    <div class="case-items">
-      <div class="case">Minecraft – Разработка мира для Московской конференции</div>
-      <div class="case">Minecraft – Виртуальная доставка товаров</div>
+    <h2 class="cases__header">НАШИ КЕЙСЫ</h2>
+    <div class="cases__list cases-list">
+      
+      <div class="cases-list__item case">
+        <div class="case__slider case__robotics-slider">
+          <div class="slider">
+            <div class="slider__container">
+                <div class="slider__wrapper">
+                    <div class="slider__slide slide">
+                        <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_1.png" alt="sus cat">
+                    </div>
+                    <div class="slider__slide slide">
+                        <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_2.png" alt="sus cat">
+                    </div>
+                    <div class="slider__slide slide">
+                        <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_1.png" alt="sus cat">
+                    </div>
+                    <div class="slider__slide slide">
+                        <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_2.png" alt="sus cat">
+                    </div>
+                </div>
+            </div>
+            <div class="slider__nav slider-nav">
+                <ul class="slider-nav__list">
+                    <li class="slider-nav__item slider-nav__item--current"></li>
+                    <li class="slider-nav__item"></li>
+                    <li class="slider-nav__item"></li>
+                    <li class="slider-nav__item"></li>
+                </ul>
+            </div>
+            <div class="slider__arrows slider-arrows">
+              <img src="https://ebeerz.github.io/MetaVerse/arrow.svg" alt="arrow" class="slider-arrows__arrow arrow arrow--previous">
+              <img src="https://ebeerz.github.io/MetaVerse/arrow.svg" alt="arrow" class="slider-arrows__arrow arrow arrow--next">
+            </div>
+          </div>
+        </div>
+
+        <h3 class="case__header">
+          Российская робототехническая олимпиада 2024
+        </h3>
+
+        <p class="case__text">
+          По заказу Минцифры игровой мир в Minecraft для Российской робототехнической олимпиады
+        </p>
+      </div>
+
+      <div class="cases-list__item case">
+        <div class="case__slider case__festival-slider">
+          <div class="slider">
+            <div class="slider__container">
+                <div class="slider__wrapper">
+                    <div class="slider__slide slide">
+                        <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_1.png" alt="sus cat">
+                    </div>
+                    <div class="slider__slide slide">
+                        <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_2.png" alt="sus cat">
+                    </div>
+                    <div class="slider__slide slide">
+                        <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_1.png" alt="sus cat">
+                    </div>
+                    <div class="slider__slide slide">
+                        <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_2.png" alt="sus cat">
+                    </div>
+                </div>
+            </div>
+            <div class="slider__nav slider-nav">
+                <ul class="slider-nav__list">
+                    <li class="slider-nav__item slider-nav__item--current"></li>
+                    <li class="slider-nav__item"></li>
+                    <li class="slider-nav__item"></li>
+                    <li class="slider-nav__item"></li>
+                </ul>
+            </div>
+            <div class="slider__arrows slider-arrows">
+              <img src="https://ebeerz.github.io/MetaVerse/arrow.svg" alt="arrow" class="slider-arrows__arrow arrow arrow--previous">
+              <img src="https://ebeerz.github.io/MetaVerse/arrow.svg" alt="arrow" class="slider-arrows__arrow arrow arrow--next">
+            </div>
+          </div>
+        </div>
+        <h3 class="case__header">
+          Евразийский фестиваль творчества 2024
+        </h3>
+
+        <p class="case__text">
+          Реклама Евразийского фестиваля творчества "На Николаевской" с помощью создания игрового мира их фестиваля в Minecraft
+        </p>
+      </div>
     </div>
   </section>
 
   <section id="gallery" class="gallery">
-      <h2>ГАЛЕРЕЯ</h2>
-      <div class="gallery-slider">Изображения...</div>
+      <h2 class="cases__header">ГАЛЕРЕЯ</h2>
+        <div class="gallery__slider">
+          <div class="slider">
+            <div class="slider__container">
+                <div class="slider__wrapper">
+                    <div class="slider__slide slide">
+                        <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_1.png" alt="sus cat">
+                    </div>
+                    <div class="slider__slide slide">
+                        <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_2.png" alt="sus cat">
+                    </div>
+                    <div class="slider__slide slide">
+                        <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_1.png" alt="sus cat">
+                    </div>
+                    <div class="slider__slide slide">
+                        <img class="slide__img" src="https://ebeerz.github.io/MetaVerse/minecraft_2.png" alt="sus cat">
+                    </div>
+                </div>
+            </div>
+            <div class="slider__nav slider-nav">
+                <ul class="slider-nav__list">
+                    <li class="slider-nav__item slider-nav__item--current"></li>
+                    <li class="slider-nav__item"></li>
+                    <li class="slider-nav__item"></li>
+                    <li class="slider-nav__item"></li>
+                </ul>
+            </div>
+            <div class="slider__arrows slider-arrows">
+              <img src="https://ebeerz.github.io/MetaVerse/arrow.svg" alt="arrow" class="slider-arrows__arrow arrow arrow--previous">
+              <img src="https://ebeerz.github.io/MetaVerse/arrow.svg" alt="arrow" class="slider-arrows__arrow arrow arrow--next">
+            </div>
+          </div>
+        </div>
   </section>
 
   <section class="contact" id="contact">
@@ -70,6 +317,6 @@
       <div class="social-icons">
           <img src="telegram.png" alt="Telegram">
       </div>
-  </footer>
+  </footer>
   </body>
 </html>
